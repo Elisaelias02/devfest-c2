@@ -1,8 +1,8 @@
-# Tu primer C2 en 3 pasos — kit del workshop
+# Tu primer C2 en 3 pasos — Cinn4mor0ll
 
 **"Offensive cloud architecture: Building adversarial infrastructure on GCP"** · DevFest 2026
 
-En el workshop construimos juntos, paso a paso, una arquitectura de comando y control (C2) mínima — la misma forma que usan las campañas reales — y entendemos *por qué* cada pieza parece legítima.
+En el workshop construimos paso a paso, una arquitectura de comando y control (C2) mínima.
 
 ## Qué vas a construir
 
@@ -28,11 +28,6 @@ tu agente  ──HTTPS──>  tu frente (redirector)  ──>  teamserver (C2)
 3. Ejecutas: `python3 agente.py` → tu beacon viaja por Internet, con HTTPS y dominio de Google, hasta el C2. Tu nombre aparece en el panel. Ya eres parte de la botnet.
 4. Paso 2: `python3 redirector.py` y reapuntas tu agente a `http://localhost:8080`. Tu tráfico ahora pasa por TU frente antes de salir a la nube.
 5. Paso 3: el presentador despliega **ese mismo redirector** a Cloud Run en vivo — la cadena completa queda en GCP.
-
-## El lunes, en tu casa
-
-- Con los **$300 de crédito gratis de GCP** repites el Paso 3 con tu propia cuenta (`paso3/COMANDOS.md`).
-- Levanta tu lab, mira tus propios logs en Cloud Run, y escribe la detección: ¿qué tiene de raro tu beacon? (periodicidad, tamaños iguales, dominio joven). Rómpela. Repite.
 
 ## Contexto real
 
