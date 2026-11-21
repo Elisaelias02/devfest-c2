@@ -1,4 +1,4 @@
-# Tu primer C2 en 3 pasos — kit del workshop
+# Tu primer C2 en 3 pasos — DevFest
 
 **"Offensive cloud architecture: Building adversarial infrastructure on GCP"** · DevFest 2026
 
