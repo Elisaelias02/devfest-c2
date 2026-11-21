@@ -1,0 +1,1 @@
+# Sin dependencias: el redirector usa solo la librería estándar de Python.
