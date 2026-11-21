@@ -29,11 +29,6 @@ tu agente  ──HTTPS──>  tu frente (redirector)  ──>  teamserver (C2)
 4. Paso 2: `python3 redirector.py` y reapuntas tu agente a `http://localhost:8080`. Tu tráfico ahora pasa por TU frente antes de salir a la nube.
 5. Paso 3: el presentador despliega **ese mismo redirector** a Cloud Run en vivo — la cadena completa queda en GCP.
 
-## El lunes, en tu casa
-
-- Con los **$300 de crédito gratis de GCP** repites el Paso 3 con tu propia cuenta (`paso3/COMANDOS.md`).
-- Levanta tu lab, mira tus propios logs en Cloud Run, y escribe la detección: ¿qué tiene de raro tu beacon? (periodicidad, tamaños iguales, dominio joven). Rómpela. Repite.
-
 ## Contexto 
 
 Esta misma forma — frentes en servicios cloud legítimos, dominios de marca, TLS válido — fue la de la campaña documentada por Cisco Talos (feb-2024) que distribuyó Astaroth/Mekotio/Ousaban contra 300+ instituciones en 15 países de LATAM vía Google Cloud Run, y la de APT29 con servicios legítimos (MITRE ATT&CK T1583.006).
