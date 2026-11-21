@@ -2,7 +2,7 @@
 
 **"Offensive cloud architecture: Building adversarial infrastructure on GCP"** · DevFest 2026
 
-En el workshop construimos juntos, paso a paso, una arquitectura de comando y control (C2) mínima — la misma forma que usan las campañas reales — y entendemos *por qué* cada pieza parece legítima.
+En el workshop construimos juntos, paso a paso, una arquitectura de comando y control (C2) mínima.
 
 ## Qué vas a construir
 
